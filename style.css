@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+/* General Rules */
+:root {
+  --dark-bg-color: #1b2330;
+  --hero-main-color: #f9faf8;
+  --hero-secondary-color: #e5e7eb;
+  --logo-color: #f9faf8;
+  --white: #f4f4f4;
+  --blue: #3882f6;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto Mono", Verdana, sans-serif;
+}
+
+body {
+  height: 100%;
+}
+
+body > * {
+  padding: 0 8vw;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--white);
+}
+
+header,
+main,
+footer {
+  background-color: var(--dark-bg-color);
+}
+
+header,
+footer {
+  height: 10vh;
+}
+
+main,
+#some-random-info,
+#quote-section,
+#call-to-action-container {
+  height: 60vh;
+}
+
+/*=============================================
+=               Header Start                  =
+=============================================*/
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#logo-text {
+  color: var(--logo-color);
+  font-size: 24px;
+  font-weight: bolder;
+}
+
+nav ul{
+  display: flex;
+}
+
+nav ul > * {
+  margin: 0.5rem;
+}
+
+/*=============================================
+=                 Main Start                  =
+=============================================*/
+main,
+.hero-container,
+.main-img-container {
+  display: flex;
+  align-items: center;
+}
+
+main > * {
+  flex: 1 1 50%;
+}
+
+.hero-container {
+  flex-direction: column;
+  margin-right: 2rem;
+}
+
+.hero-container > * {
+  padding-bottom: 0.5rem;
+}
+
+#main-hero-text {
+  font-size: 48px;
+  font-weight: bolder;
+  line-height: 1em;
+  color: var(--hero-main-color);
+}
+
+#secondary-hero-text {
+  font-size: 18px;
+  color: var(--hero-secondary-color);
+}
+
+#website-sign-up {
+  border: none;
+  border-radius: 8px;
+  background-color: rgb(38, 156, 224);
+  align-self: flex-start;
+  padding: 10px 20px;
+  font-weight: bold;
+  color: var(--white);
+}
+
+.main-img-container img{
+ background-color: rgb(219, 219, 219);
+ text-align: center;
+ justify-content: flex-end;
+ width: 100%;
+}
+/*=============================================
+=              Random Info Start              =
+=============================================*/
+
+
+#some-random-info h2{
+  font-size: 36px;
+  font-weight: bolder;
+  color: #1f2937;
+  text-align: center;
+  padding-top: 2rem;
+  padding-top: 2rem;
+  padding-bottom: 2.5rem;
+}
+
+#figures-container {
+  display: flex;
+  align-items: center;
+  padding: 0 5rem;
+}
+
+.figures {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  margin: 0 2rem;
+}
+
+.figures img {
+  border: 3px solid var(--blue);
+  border-radius: 10px;
+  height: 130px;
+}
+
+/*=============================================
+=                Quote Section                =
+=============================================*/
+#quote-section {
+  background-color: var(--hero-secondary-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#author {
+  font-weight: bold;
+  align-self: flex-end;
+}
+
+blockquote {
+  font-size: 36px;
+  font-style: italic;
+  font-weight: lighter;
+}
+
+/*=============================================
+=               Call to Action                =
+=============================================*/
+#call-to-action-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#call-to-action {
+  background-color: var(--blue);
+  color: var(--white);
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 2rem 4rem;
+}
+
+#call-to-action button {
+  background-color: inherit;
+  border: 2px solid;
+  border-color: var(--white);
+  border-radius: 10px;
+  padding: 0.1rem 2rem;
+  color: inherit;
+  font-weight: bold;
+}
+
+/*=============================================
+=                   Footer                    =
+=============================================*/
+footer {
+  color: var(--white);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+

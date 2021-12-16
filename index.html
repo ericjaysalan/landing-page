@@ -4,68 +4,84 @@
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="./style.css">
 <title>Landing Page Project</title>
 </head>
 <body>
   <header>
-    Header Logo
-
+    <p id="logo-text">Header Logo</p>
     <nav>
       <ul>
-        <li><a href="#">header link one</a></li>
-        <li><a href="#">header link two</a></li>
-        <li><a href="#">header link three</a></li>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">FAQ</a></li>
       </ul>
     </nav>
   </header>
-  <main>
-    <h1>
-      This website is awesome!
-    </h1>
-    <p>
-      This website has some subtext that goes under the main title. It's a smaller font and the color is lower contrast.
-    </p>
-    <button>
-      Sign Up
-    </button>
 
-    <img src="" alt="this is a placeholder for an image">
+  <main>
+    <div class="hero-container">
+      <h1 id="main-hero-text">
+        This website is awesome!
+      </h1>
+      <p id="secondary-hero-text">
+        This website has some subtext that goes under the main title. It's a smaller font and the color is lower contrast.
+      </p>
+      <button id="website-sign-up">
+        Sign Up
+      </button>
+    </div>
+
+    <div class="main-img-container">
+      <img src="" alt="this is a placeholder for an image" width="403px" height="205px">
+    </div>
   </main>
-    <div>
-      <h2>Some random information</h2>
-      <figure>
+
+  <div id="some-random-info">
+    <h2 >Some random information.</h2>
+    <div id="figures-container">
+      <figure class="figures">
         <img src="" alt="img goes here">
         <figcaption>this is some subtext under an illustration or image</figcaption>
       </figure>
-      <figure>
+      <figure class="figures">
         <img src="" alt="img goes here">
         <figcaption>this is some subtext under an illustration or image</figcaption>
       </figure>
-      <figure>
+      <figure class="figures">
         <img src="" alt="img goes here">
         <figcaption>this is some subtext under an illustration or image</figcaption>
       </figure>
-      <figure>
+      <figure class="figures">
         <img src="" alt="img goes here">
         <figcaption>this is some subtext under an illustration or image</figcaption>
       </figure>
     </div>
-    <div>
-      <blockquote>
-        <p>This is an inspiring quote, or a testimonial from a customer. Maybe it's just filling up space, or maybe people will actually read it. Who knows? All I know is that it looks nice.</p>
-      </blockquote>
-    </div>
-    <div>
-      <div>
+  </div>
+
+  <div id="quote-section">
+    <blockquote>
+      <p>
+        This is an inspiring quote, or a testimonial from a customer. Maybe it's just filling up space, or maybe people will actually read it. Who knows? All I know is that it looks nice.
+        <br>
+      </p>
+    </blockquote>
+    <p id="author">- Thor, the god of Thunder</p>
+  </div>
+
+  <div id="call-to-action-container">
+    <div id="call-to-action">
       <div>
         <h2>Call to action! It's time!</h2>
         <p>Sign up for our product by clicking that button right over there!</p>
       </div>
       <button>Sign Up</button>
     </div>
-    </div>
-    <footer>
-      <p>Copyright &copy; The Odin Project</p>
-    </footer>
+  </div>
+
+  <footer>
+    <p>Copyright &copy; The Odin Project</p>
+    <p>Website by: Eric Jay R. Salan</p>
+  </footer>
 </body>
 </html>
